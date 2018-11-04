@@ -10,17 +10,17 @@ public class MonumentoNacional extends ZonasProtegidas{
 
     private int nationalEntrades;
     private int internationalEntrades;
-    private double pib;
+    private int pib;
     private static final double PIB = 0.002;
 
     public MonumentoNacional() {
     this("", "", 0, 0, 0);
     }
 
-    public MonumentoNacional( String nombre, String provincia, int montoIngresos, int nationalEntrades, double pib) {
+    public MonumentoNacional(String nombre, String provincia, int montoIngresos, int nationalEntrades, int international) {
         super(nombre, provincia, montoIngresos);
         this.nationalEntrades = nationalEntrades;
-        this.pib = pib;
+        this.internationalEntrades = international;
     }
 
     public int getNationalEntrades() {
@@ -39,17 +39,10 @@ public class MonumentoNacional extends ZonasProtegidas{
         this.internationalEntrades = internationalEntrades;
     }
 
-    public double getPib() {
-        return pib;
-    }
 
-    public void setPib(double pib) {
-        this.pib = pib;
-    }
-
-    public int calcularIngresos() {
-       int result = 0;
-       result += (nationalEntrades*5000)+(internationalEntrades*6000)+(pib*PIB);
+    public double calcularIngresos() {
+       double result = 0;
+       result += ((nationalEntrades*5000)+(internationalEntrades*6000))*PIB;
        return result;
     }
 

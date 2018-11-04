@@ -47,7 +47,7 @@ public class ParqueNacional extends ZonasProtegidas{
     }
 
     @Override
-    public int calcularIngresos() {
+    public double calcularIngresos() {
         int subvencion = (1200 * clientesElectricidad);
         int ingresosEntradas = (cantCostarricenses * 5000) + (cantExtrangeros * 6000);
         int totalIngresos = subvencion + ingresosEntradas;
@@ -56,7 +56,7 @@ public class ParqueNacional extends ZonasProtegidas{
 
     @Override
     public String toString() {
-        return "ParqueNacional{" + "clientesElectricidad=" + clientesElectricidad + ", cantCostarricenses=" + cantCostarricenses + ", cantExtrangeros=" + cantExtrangeros + '}';
+        return "[ParqueNacional] " + super.toString();
     }  
 }
 

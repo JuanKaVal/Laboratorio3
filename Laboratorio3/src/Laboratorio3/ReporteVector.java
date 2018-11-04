@@ -18,8 +18,8 @@ public class ReporteVector {
     
 
     public String[] report1 () {
-        String[] report = new String[4];
-        for (String i:report) {
+        String[] reports = new String[4];
+        for (String i:reports) {
             System.out.println();
         }
         return null;

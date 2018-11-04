@@ -8,7 +8,7 @@ package Laboratorio3;
  */
 public interface Ingresos {
 
-    public int calcularIngresos();
+    public double calcularIngresos();
     
     
 
