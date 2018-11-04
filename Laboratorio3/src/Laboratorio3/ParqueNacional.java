@@ -51,7 +51,7 @@ public class ParqueNacional extends ZonasProtegidas{
         int subvencion = (1200 * clientesElectricidad);
         int ingresosEntradas = (cantCostarricenses * 5000) + (cantExtrangeros * 6000);
         int totalIngresos = subvencion + ingresosEntradas;
-        return totalIngresos += super.getMontoIngresos();
+        return totalIngresos;
     }
 
     @Override

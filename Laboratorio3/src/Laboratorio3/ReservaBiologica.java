@@ -31,7 +31,7 @@ public class ReservaBiologica extends ZonasProtegidas{
     public int calcularIngresos() {
         int result = 0;
         result += (impuesto*SUB);
-        return result += super.getMontoIngresos();
+        return result;
     }
 
     @Override

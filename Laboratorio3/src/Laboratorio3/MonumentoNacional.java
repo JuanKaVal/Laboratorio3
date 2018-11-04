@@ -50,7 +50,7 @@ public class MonumentoNacional extends ZonasProtegidas{
     public int calcularIngresos() {
        int result = 0;
        result += (nationalEntrades*5000)+(internationalEntrades*6000)+(pib*PIB);
-       return result += super.getMontoIngresos();
+       return result;
     }
 
     @Override
