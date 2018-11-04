@@ -21,7 +21,30 @@ public class ParqueNacional extends ZonasProtegidas{
     this.cantExtrangeros = cantExtrangeros;
     this.clientesElectricidad = clientesElectricidad;
     }
-    
+
+    public int getClientesElectricidad() {
+        return clientesElectricidad;
+    }
+
+    public void setClientesElectricidad(int clientesElectricidad) {
+        this.clientesElectricidad = clientesElectricidad;
+    }
+
+    public int getCantCostarricenses() {
+        return cantCostarricenses;
+    }
+
+    public void setCantCostarricenses(int cantCostarricenses) {
+        this.cantCostarricenses = cantCostarricenses;
+    }
+
+    public int getCantExtrangeros() {
+        return cantExtrangeros;
+    }
+
+    public void setCantExtrangeros(int cantExtrangeros) {
+        this.cantExtrangeros = cantExtrangeros;
+    }
 
     @Override
     public int calcularIngresos() {
@@ -29,13 +52,12 @@ public class ParqueNacional extends ZonasProtegidas{
         int ingresosEntradas = (cantCostarricenses * 5000) + (cantExtrangeros * 6000);
         int totalIngresos = subvencion + ingresosEntradas;
         return totalIngresos;
-        
     }
-    
-    
-    
-    
-    
+
+    @Override
+    public String toString() {
+        return "ParqueNacional{" + "clientesElectricidad=" + clientesElectricidad + ", cantCostarricenses=" + cantCostarricenses + ", cantExtrangeros=" + cantExtrangeros + '}';
+    }  
 }
 
     
