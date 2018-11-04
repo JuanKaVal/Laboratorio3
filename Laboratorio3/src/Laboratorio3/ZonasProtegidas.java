@@ -7,8 +7,9 @@ package Laboratorio3;
  * @version 3 De Noviembre, 2018
  */
 public interface ZonasProtegidas {
-    
-    
+
     public int calcularIngresos();
+    
+    
 
 }
