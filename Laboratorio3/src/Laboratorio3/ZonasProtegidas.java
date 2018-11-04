@@ -6,7 +6,7 @@ package Laboratorio3;
  * @author Edwin Molina , Juan Carlos Valverde
  * @version 3 De Noviembre, 2018
  */
-public abstract class ZonasProtegidas implements Ingresos{
+public abstract class ZonasProtegidas implements Ingresos {
     
     private String nombre;
     private String provincia;
@@ -48,6 +48,6 @@ public abstract class ZonasProtegidas implements Ingresos{
 
     @Override
     public String toString() {
-        return "ZonasProtegidas{" + "nombre=" + nombre + ", provincia=" + provincia + ", montoIngresos=" + montoIngresos + '}';
+        return " Nombre: " + nombre + ", Provincia: " + provincia + ", MontoIngresos:" + montoIngresos;
     }     
 }
