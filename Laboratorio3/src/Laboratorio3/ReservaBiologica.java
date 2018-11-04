@@ -28,7 +28,7 @@ public class ReservaBiologica extends ZonasProtegidas{
         this.impuesto = impuesto;
     }
 
-    public int calcularIngresos() {
+    public double calcularIngresos() {
         int result = 0;
         result += (impuesto*SUB);
         return result;
