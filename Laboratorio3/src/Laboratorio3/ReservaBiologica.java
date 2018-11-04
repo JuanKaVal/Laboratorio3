@@ -9,10 +9,10 @@ package Laboratorio3;
 public class ReservaBiologica extends ZonasProtegidas{ 
     
     private static final double SUB = 0.005;
-
+    
    
     public int calcularIngresos() {
-  
+        
     return 0;
     }
 
