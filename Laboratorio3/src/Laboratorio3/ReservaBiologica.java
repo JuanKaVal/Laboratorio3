@@ -6,20 +6,13 @@ package Laboratorio3;
  * @author Edwin Molina , Juan Carlos Valverde
  * @version 3 De Noviembre, 2018
  */
-public class ReservaBiologica extends ZonasProtegidas{
-
-    public ReservaBiologica() {
-    }
-
-    public ReservaBiologica(String nombre, String provincia, int ingresos) {
-        super(nombre, provincia, ingresos);
-    }
+public abstract class ReservaBiologica implements ZonasProtegidas {
 
     @Override
-    public String toString() {
-        return "ReservaBiologica: " + super.toString();
+    public int calcularIngresos() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-    
+
     
     
 }
