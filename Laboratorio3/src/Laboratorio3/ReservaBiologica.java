@@ -6,7 +6,11 @@ package Laboratorio3;
  * @author Edwin Molina , Juan Carlos Valverde
  * @version 3 De Noviembre, 2018
  */
-public abstract class ReservaBiologica implements ZonasProtegidas {
+public class ReservaBiologica extends Ingresos {
+
+    
+    
+    
 
     @Override
     public int calcularIngresos() {

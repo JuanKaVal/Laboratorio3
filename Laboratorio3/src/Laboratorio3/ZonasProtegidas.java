@@ -8,6 +8,7 @@ package Laboratorio3;
  */
 public interface ZonasProtegidas {
     
+    
     public int calcularIngresos();
 
 }
