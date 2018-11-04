@@ -9,11 +9,33 @@ package Laboratorio3;
 public class ReservaBiologica extends ZonasProtegidas{ 
     
     private static final double SUB = 0.005;
-    
-   
-    public int calcularIngresos() {
-        
-    return 0;
+    private int impuesto;
+
+    public ReservaBiologica() {
+        this("", "", 0, 0);
     }
 
+    public ReservaBiologica(String nombre, String provincia, int montoIngresos,int impuesto) {
+        super(nombre, provincia, montoIngresos);
+        this.impuesto = impuesto;
+    }
+
+    public int getImpuesto() {
+        return impuesto;
+    }
+
+    public void setImpuesto(int impuesto) {
+        this.impuesto = impuesto;
+    }
+
+    public int calcularIngresos() {
+        int result = 0;
+        result += (impuesto*SUB);
+        return result += super.getMontoIngresos();
+    }
+
+    @Override
+    public String toString() {
+        return "[ReservaBiologica]" + super.toString();
+    }  
 }
