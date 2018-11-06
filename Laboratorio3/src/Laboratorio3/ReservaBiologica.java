@@ -16,7 +16,7 @@ public class ReservaBiologica extends ZonasProtegidas{
     }
 
     public ReservaBiologica(String nombre, String provincia, int montoIngresos,int impuesto) {
-        super(nombre, provincia, montoIngresos);
+        //super(nombre, provincia, montoIngresos);
         this.impuesto = impuesto;
     }
 

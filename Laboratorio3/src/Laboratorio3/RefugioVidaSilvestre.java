@@ -17,7 +17,7 @@ public class RefugioVidaSilvestre extends ZonasProtegidas{
     }
     
     public RefugioVidaSilvestre(String nombre, String provincia, int montoIngresos, String propiedad, int impuesto, int ayudaNoGubernamental){ 
-        super(nombre, provincia, montoIngresos);
+        //super(nombre, provincia, montoIngresos);
         this.propiedad = propiedad;
         this.impuesto = impuesto;
         this.ayudaNoGubernamental = ayudaNoGubernamental;

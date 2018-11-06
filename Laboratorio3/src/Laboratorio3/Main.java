@@ -13,7 +13,7 @@ public class Main {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        ParqueNacional parque = new ParqueNacional("Wachipeling", "Alajuela", 0, 2, 5, 10);
+        ParqueNacional parque = new ParqueNacional("Wachipeling", "Alajuela", 2, 5, 10);
         ReporteVector reporte = new ReporteVector();
         reporte.agregar(parque);
         reporte.agregar(parque);

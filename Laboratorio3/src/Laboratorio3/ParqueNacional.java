@@ -12,11 +12,11 @@ public class ParqueNacional extends ZonasProtegidas{
     private int cantExtrangeros;
 
     public ParqueNacional() {
-        this("","",0,0,0,0);
+        this("","",0,0,0);
     }
     
-    public ParqueNacional(String nombre, String provincia, int montoIngresos, int cantCostarricenses, int cantExtrangeros, int clientesElectricidad) {
-    super(nombre, provincia, montoIngresos);
+    public ParqueNacional(String nombre, String provincia, int cantCostarricenses, int cantExtrangeros, int clientesElectricidad) {
+    //super(nombre, provincia, montoIngresos);
     this.cantCostarricenses = cantCostarricenses;
     this.cantExtrangeros = cantExtrangeros;
     this.clientesElectricidad = clientesElectricidad;
@@ -58,9 +58,7 @@ public class ParqueNacional extends ZonasProtegidas{
     
     @Override
     public double total() {
-        double monto = calcularIngresos();
-        super.setMontoIngresos(monto);
-        return super.getMontoIngresos();
+        return calcularIngresos();
     }
 
     @Override

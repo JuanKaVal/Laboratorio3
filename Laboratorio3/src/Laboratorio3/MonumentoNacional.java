@@ -18,7 +18,7 @@ public class MonumentoNacional extends ZonasProtegidas{
     }
 
     public MonumentoNacional(String nombre, String provincia, int montoIngresos, int nationalEntrades, int international) {
-        super(nombre, provincia, montoIngresos);
+        //super(nombre, provincia, montoIngresos);
         this.nationalEntrades = nationalEntrades;
         this.internationalEntrades = international;
     }

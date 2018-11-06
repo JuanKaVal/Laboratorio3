@@ -46,7 +46,7 @@ public class ReporteVector {
         if (areas != null) {
             for (int i = 0; i < areas.length; i++) {
                 if (areas[i] != null) {
-                    print += "\n" + areas[i].toString() + " " + areas[i].total();
+                    print += "\n" + areas[i].toString() + areas[i].total();
                 }
             }
         }
