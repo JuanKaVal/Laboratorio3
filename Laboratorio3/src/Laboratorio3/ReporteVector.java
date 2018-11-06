@@ -82,10 +82,9 @@ public class ReporteVector {
     }
     
     private void crecimiento () {
-        //mal
-       // ZonasProtegidas[] zonaProtegida = new ZonasProtegidas[areas.length*2];
-       //System.arraycopy(CAP, CAP, this, CAP, CAP);
-       
+       ZonasProtegidas[] zonaProtegida = new ZonasProtegidas[areas.length*2];
+       System.arraycopy(areas, 0, zonaProtegida, 0, areas.length);
+       areas = zonaProtegida;
         
     }
     
