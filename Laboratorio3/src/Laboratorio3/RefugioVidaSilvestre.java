@@ -61,6 +61,13 @@ public class RefugioVidaSilvestre extends ZonasProtegidas{
         }
         return 0;
     }
+
+    @Override
+    public String toString() {
+        return "[RefugioVidaSilvestre]" + super.toString();
+    }
+    
+    
     
     
 }

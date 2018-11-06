@@ -9,7 +9,10 @@ package Laboratorio3;
 public class ReporteVector {
     
     private static final int CAP = 4;
-    ParqueNacional parque = new ParqueNacional("Madre Verde", "Alajuela",2000000 , 2000, 7000, 2500);
+    ParqueNacional parque = new ParqueNacional();
+    MonumentoNacional monumet = new MonumentoNacional();
+    ReservaBiologica reserva = new ReservaBiologica();
+    RefugioVidaSilvestre refugio = new RefugioVidaSilvestre();
     
     
     public ReporteVector() {
@@ -18,8 +21,9 @@ public class ReporteVector {
     
     public String[] report1 () {
         String[] reports = new String[CAP];
+        String valores = "";
         for (String i:reports) {
-            
+            valores += "" + parque.toString() + "\n" + monumet.toString() "\n" + reserva.toString() + "\n" + refugio.toString();
         }
         return null;
     }
