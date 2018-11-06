@@ -78,7 +78,17 @@ public class ReporteVector {
     }
     
     public String reporte2() {
-        return"";
+      String print = "";
+        int amount = 0;
+        if (areas != null) {
+            for (int i = 0; i < areas.length; i++) {
+                if (areas[i] != null) {
+                    print += "\n" + "Entradas: " + areas[i]. + "Subvención: " + areas[i]. +"No Gubernamental " + areas[i].;
+                }
+            }
+        }
+
+        return print ;
     }
     
     private void crecimiento () {

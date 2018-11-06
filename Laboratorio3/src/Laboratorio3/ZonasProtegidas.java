@@ -11,6 +11,7 @@ public abstract class ZonasProtegidas implements Ingresos {
     private String nombre;
     private String provincia;
 
+
     public ZonasProtegidas() {
         this("","");
     }
