@@ -6,7 +6,7 @@ package Laboratorio3;
  * @author Edwin Molina , Juan Carlos Valverde
  * @version 3 De Noviembre, 2018
  */
-public class ReporteVector {
+public abstract class ReporteVector {
 
     private String[] reports;
     private static final int CAP = 4;
@@ -18,10 +18,19 @@ public class ReporteVector {
     
 
     public String[] report1 () {
-        String[] reports = new String[4];
+        String[] reports = new String[CAP];
         for (String i:reports) {
-            System.out.println();
+            
         }
+        return null;
+    }
+    
+    public void crecimiento () {
+        
+    }
+    
+    public String[] agregar () {
+        
         return null;
     }
     
