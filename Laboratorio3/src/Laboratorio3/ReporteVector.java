@@ -8,29 +8,45 @@ package Laboratorio3;
  */
 public class ReporteVector {
     
+    private ZonasProtegidas[] areas;
     private static final int CAP = 4;
-    ParqueNacional parque = new ParqueNacional();
-    MonumentoNacional monumet = new MonumentoNacional();
-    ReservaBiologica reserva = new ReservaBiologica();
-    RefugioVidaSilvestre refugio = new RefugioVidaSilvestre();
-    
-    
-    public ReporteVector() {
-        String[] reports = new String[CAP];
-    }
-    
-    public String[] report1 () {
-        String[] reports = new String[CAP];
-        String valores = "";
-        for (String i:reports) {
-            valores += "" + parque.toString() + "\n" + monumet.toString() "\n" + reserva.toString() + "\n" + refugio.toString();
+
+    public ReporteVector(int tama) {
+        if (areas != null) {
+            areas = new ZonasProtegidas[tama];
+        }else if (areas.length == 0) {
+            areas = new ZonasProtegidas[CAP];
         }
-        return null;
+    }
+
+    public ZonasProtegidas[] getAreas() {
+        return areas;
+    }
+
+    public void setAreas(ZonasProtegidas[] areas) {
+        this.areas = areas;
+    }
+
+    @Override
+    public String toString() {
+        return "ReporteVector{" + "areas=" + areas + '}';
     }
     
-    public String[] report2 () {
+    public String reporte1() {
+        String print = "";
+        int amount = 0;
+        for (int i = 0; i < areas.length; i++) {
+            print += print + areas[i].toString();
+
+        }
         
+        for (int c = 0; c < areas.length; c++) {
+            amount += areas[c].total();
+        }
+        print += print + "Total: " + amount;
+        return print ;
     }
+    
     
     public void crecimiento () {
         

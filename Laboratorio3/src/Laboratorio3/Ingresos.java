@@ -9,6 +9,7 @@ package Laboratorio3;
 public interface Ingresos {
 
     public double calcularIngresos();
+    public double total();
     
     
 

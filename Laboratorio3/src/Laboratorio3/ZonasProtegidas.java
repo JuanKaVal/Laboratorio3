@@ -45,6 +45,11 @@ public abstract class ZonasProtegidas implements Ingresos {
     public void setMontoIngresos(int montoIngresos) {
         this.montoIngresos = montoIngresos;
     }
+    
+    @Override
+    public double total() {
+        return this.calcularIngresos();
+    }
 
     @Override
     public String toString() {

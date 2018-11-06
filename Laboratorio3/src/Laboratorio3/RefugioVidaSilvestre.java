@@ -47,8 +47,6 @@ public class RefugioVidaSilvestre extends ZonasProtegidas{
         this.ayudaNoGubernamental = ayudaNoGubernamental;
     }
     
-    
-   
     @Override
     public double calcularIngresos() {
         if(propiedad.equals("Estado")){
@@ -60,6 +58,11 @@ public class RefugioVidaSilvestre extends ZonasProtegidas{
         }else{
         }
         return 0;
+    }
+    
+    @Override
+    public double total() {
+        return this.calcularIngresos();
     }
 
     @Override
