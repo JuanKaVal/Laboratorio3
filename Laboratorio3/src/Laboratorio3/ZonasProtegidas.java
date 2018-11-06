@@ -10,7 +10,6 @@ public abstract class ZonasProtegidas implements Ingresos {
     
     private String nombre;
     private String provincia;
-    //private double montoIngresos;
 
     public ZonasProtegidas() {
         this("","");
@@ -19,7 +18,6 @@ public abstract class ZonasProtegidas implements Ingresos {
     public ZonasProtegidas(String nombre, String provincia) {
         this.nombre = nombre;
         this.provincia = provincia;
-        //this.montoIngresos = montoIngresos;
     }
 
     public String getNombre() {
@@ -37,18 +35,10 @@ public abstract class ZonasProtegidas implements Ingresos {
     public void setProvincia(String provincia) {
         this.provincia = provincia;
     }
-
-   // public double getMontoIngresos() {
-    //    return montoIngresos;
-   // }
-
-    // public void setMontoIngresos(double montoIngresos) {
-     //   this.montoIngresos = montoIngresos;
-    //}
     
-    @Override
+@Override
     public double total() {
-        return this.calcularIngresos();
+        return calcularIngresos();
     }
 
     @Override

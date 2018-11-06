@@ -12,11 +12,11 @@ public class ReservaBiologica extends ZonasProtegidas{
     private int impuesto;
 
     public ReservaBiologica() {
-        this("", "", 0, 0);
+        this("", "", 0);
     }
 
-    public ReservaBiologica(String nombre, String provincia, int montoIngresos,int impuesto) {
-        //super(nombre, provincia, montoIngresos);
+    public ReservaBiologica(String nombre, String provincia,int impuesto) {
+        super(nombre, provincia);
         this.impuesto = impuesto;
     }
 
@@ -36,7 +36,7 @@ public class ReservaBiologica extends ZonasProtegidas{
     
     @Override
     public double total() {
-        return this.calcularIngresos();
+        return calcularIngresos();
     }
 
     @Override

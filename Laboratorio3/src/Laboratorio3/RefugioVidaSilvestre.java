@@ -13,11 +13,11 @@ public class RefugioVidaSilvestre extends ZonasProtegidas{
     private static final double SUBVENCION = 0.005;
 
     public RefugioVidaSilvestre() {
-    this("", "", 0, "", 0, 0);
+    this("", "", "", 0, 0);
     }
     
-    public RefugioVidaSilvestre(String nombre, String provincia, int montoIngresos, String propiedad, int impuesto, int ayudaNoGubernamental){ 
-        //super(nombre, provincia, montoIngresos);
+    public RefugioVidaSilvestre(String nombre, String provincia, String propiedad, int impuesto, int ayudaNoGubernamental){ 
+        super(nombre, provincia);
         this.propiedad = propiedad;
         this.impuesto = impuesto;
         this.ayudaNoGubernamental = ayudaNoGubernamental;
@@ -62,7 +62,7 @@ public class RefugioVidaSilvestre extends ZonasProtegidas{
     
     @Override
     public double total() {
-        return this.calcularIngresos();
+        return calcularIngresos();
     }
 
     @Override

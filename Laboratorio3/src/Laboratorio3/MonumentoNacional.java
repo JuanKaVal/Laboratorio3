@@ -14,11 +14,11 @@ public class MonumentoNacional extends ZonasProtegidas{
     private static final double PIB = 0.002;
 
     public MonumentoNacional() {
-    this("", "", 0, 0, 0);
+    this("", "", 0, 0);
     }
 
-    public MonumentoNacional(String nombre, String provincia, int montoIngresos, int nationalEntrades, int international) {
-        //super(nombre, provincia, montoIngresos);
+    public MonumentoNacional(String nombre, String provincia, int nationalEntrades, int international) {
+        super(nombre, provincia);
         this.nationalEntrades = nationalEntrades;
         this.internationalEntrades = international;
     }
@@ -48,7 +48,7 @@ public class MonumentoNacional extends ZonasProtegidas{
     
     @Override
     public double total() {
-        return this.calcularIngresos();
+        return calcularIngresos();
     }
 
     @Override
