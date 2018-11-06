@@ -10,12 +10,20 @@ public class ReporteVector {
     
     private ZonasProtegidas[] areas;
     private static final int CAP = 4;
+    private int round = 0;
 
+    public ReporteVector() {
+
+        areas = new ZonasProtegidas[CAP];
+
+    } 
+    
+    
     public ReporteVector(ZonasProtegidas[] tama) {
-        if (tama != null) {
-            areas = tama;
-        }else {
+        if (tama == null) {
             areas = new ZonasProtegidas[CAP];
+        }else {
+            areas = tama;
         }
     }
 
@@ -35,26 +43,52 @@ public class ReporteVector {
     public String reporte1() {
         String print = "";
         int amount = 0;
-        for (int i = 0; i < areas.length; i++) {
-            print += print + areas[i].toString();
-
+        if (areas != null) {
+            for (int i = 0; i < areas.length; i++) {
+                if (areas[i] != null) {
+                    print += "\n" + areas[i].toString() + " " + areas[i].total();
+                }
+            }
         }
         
-        for (int c = 0; c < areas.length; c++) {
-            amount += areas[c].total();
+        if (areas != null) {
+           for (int c = 0; c < areas.length; c++) {
+                if (areas[c] != null) {
+                    amount += areas[c].total();
+            }
         }
-        print += print + "Total: " + amount;
+        }
+        print += "\n" + "Total: " + amount;
         return print ;
     }
     
+    public void agregar (ZonasProtegidas newOne) {
+        if (areas.length == round){
+            crecimiento();
+            if (newOne != null) {
+                areas[round] = newOne;
+                round += 1;
+            } 
+        
+        }else if (newOne != null) {
+            System.out.println("uno");
+            areas[round] = newOne;
+                round += 1;
+        }
+    }
     
-    public void crecimiento () {
+    public String reporte2() {
+        return"";
+    }
+    
+    private void crecimiento () {
+        //mal
+       // ZonasProtegidas[] zonaProtegida = new ZonasProtegidas[areas.length*2];
+       //System.arraycopy(CAP, CAP, this, CAP, CAP);
+       
         
     }
     
-    public String[] agregar () {
-        
-        return null;
-    }
+    
     
 }

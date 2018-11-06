@@ -13,11 +13,12 @@ public class Main {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        ZonasProtegidas parque = new ParqueNacional("Wachipeling", "Alajuela", 0, 2500, 5000, 17000);
-        ZonasProtegidas[] organiza = {parque}; 
-        ReporteVector reporte = new ReporteVector(organiza);
+        ParqueNacional parque = new ParqueNacional("Wachipeling", "Alajuela", 0, 2, 5, 10);
+        ReporteVector reporte = new ReporteVector();
+        reporte.agregar(parque);
+        reporte.agregar(parque);
+        System.out.println(reporte.reporte1());
         
-        reporte.reporte1();
         
         
     }
