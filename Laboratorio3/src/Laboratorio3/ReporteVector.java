@@ -11,10 +11,10 @@ public class ReporteVector {
     private ZonasProtegidas[] areas;
     private static final int CAP = 4;
 
-    public ReporteVector(int tama) {
-        if (areas != null) {
-            areas = new ZonasProtegidas[tama];
-        }else if (areas.length == 0) {
+    public ReporteVector(ZonasProtegidas[] tama) {
+        if (tama != null) {
+            areas = tama;
+        }else {
             areas = new ZonasProtegidas[CAP];
         }
     }
