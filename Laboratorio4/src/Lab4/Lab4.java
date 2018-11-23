@@ -25,7 +25,7 @@ public class Lab4 {
             int temp = v[first];
             v[first] = v[last];
             v[last] = temp;          
-            invert(v,first+1 , last-1);
+            invert(v,first+1, last-1);
         }    
     }
     
@@ -34,14 +34,17 @@ public class Lab4 {
         for(int i: v) {
             System.out.print(i + " ");
         }
-
+    }
     //Metodo 4
-    
+    public static String atm(int mount) {
+        
+        
+        return "";
+    }
     
     
     //Método 5
     
  
-    
-    }
+
 }
