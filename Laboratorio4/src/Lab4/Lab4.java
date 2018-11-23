@@ -7,28 +7,41 @@ package Lab4;
 
 /**
  *
- * @author Satellaizar
+ * @author Edwin Molina, Juan Carlos Valverde
  */
-public class Recursividad {
+public class Lab4 {
     
-        //Metodo 2
-    public static void invertir (int[] v, int first, int last) {
-        if(first < last) {
+    //Metodo 1
+    
+    
+    
+    //Metodo 2
+    public static void invert (int[] v, int first, int last) {
+        
+        if(first > last) {
           
         }else {
+            
             int temp = v[first];
             v[first] = v[last];
-            v[first] = temp;
-            
-            invertir(v,first+1 , last-1);
+            v[last] = temp;          
+            invert(v,first+1 , last-1);
         }    
     }
     
-    //Metodo Imprimir
+    //Método 3
     public static void print (int[] v) {
         for(int i: v) {
             System.out.print(i + " ");
         }
-        
+
+    //Metodo 4
+    
+    
+    
+    //Método 5
+    
+ 
+    
     }
 }
