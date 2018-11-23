@@ -12,5 +12,8 @@ public class Test {
         int[] test = {1,2,3,4};
         Lab4.invert(test, 0, test.length-1);
         Lab4.print(test);
+        
+        int[]domin = {50000,20000,10000,5000,1000,500,100,50,25,10,5};
+        
     }
 }
