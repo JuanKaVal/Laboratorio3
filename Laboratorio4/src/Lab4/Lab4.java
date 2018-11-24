@@ -58,5 +58,18 @@ public class Lab4 {
     }
 
     //Método 5
-
+    public static int mcd(int numr1, int numr2) { 
+        if (numr1 == numr2) {
+            return numr1;
+        }
+        
+        if (numr1 > numr2) {
+           return mcd(numr1 - numr2, numr2);
+        }
+        
+        if (numr1 < numr2) {
+           return mcd(numr1, numr2 - numr1);
+        }
+        return numr1;
+    }
 }

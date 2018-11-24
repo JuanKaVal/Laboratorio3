@@ -30,6 +30,6 @@ public class Test {
 
         
         //Ejercicio 5
-        //System.out.println(Lab4.mcd(115, 90));
+        System.out.println(Lab4.mcd(115, 90));
     }
 }
