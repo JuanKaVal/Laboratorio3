@@ -26,7 +26,10 @@ public class Test {
         System.out.println("Ejercio 4");
         int[]domin = {50000,20000,10000,5000,1000,500,100,50,25,10,5};
         System.out.println("El Vuelto Es: " + Lab4.atm(42750, domin, 0, 0));
+        System.out.println("\n");
+
         
-            //System.out.println(Lab4.mcd(115, 90));
+        //Ejercicio 5
+        //System.out.println(Lab4.mcd(115, 90));
     }
 }
