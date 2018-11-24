@@ -47,8 +47,14 @@ public class Lab4 {
         if (index == domin.length) {
             return "";
         }
+        if (total >= domin[index]) {
+            return atm(total - domin[index], domin, count + 1, index);
+        }
         
-        return atm(total, domin, count, index);
+        if (count != 0) {
+            return "\n" + count + ":" + domin[index] + atm(total, domin, count, index + 1);
+        }
+        return atm(total, domin, count, index + 1);
     }
     
     
