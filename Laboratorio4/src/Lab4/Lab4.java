@@ -44,7 +44,7 @@ public class Lab4 {
     
     //Metodo 4
     public static String atm(int total, int[] domin, int count, int index) {
-        if (index == 5) {
+        if (index == domin.length) {
             return "";
         }
         
