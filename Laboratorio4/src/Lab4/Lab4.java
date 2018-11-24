@@ -12,7 +12,13 @@ package Lab4;
 public class Lab4 {
     
     //Metodo 1
-    
+    public static int binaryToDecimal (int number, int counter) {
+        if(number == 0) {
+            return number;
+        }else{
+            return ((int)Math.pow(2, counter)) + binaryToDecimal((number/10), (counter+1));
+        }
+    }
     
     
     //Metodo 2
