@@ -55,8 +55,8 @@ public class ReporteVector {
            for (int c = 0; c < areas.length; c++) {
                 if (areas[c] != null) {
                     amount += areas[c].total();
+                }
             }
-        }
         }
         print += "\n" + "Total: " + amount;
         return print ;
@@ -83,7 +83,7 @@ public class ReporteVector {
         if (areas != null) {
             for (int i = 0; i < areas.length; i++) {
                 if (areas[i] != null) {
-                    print += "\n" + "Entradas: " + areas[i]. + "Subvención: " + areas[i]. +"No Gubernamental " + areas[i].;
+                    print += "\n" + "Entradas: " + areas[i].getNombre() + "Subvención: " + areas[i].getNombre() +"No Gubernamental " + areas[i].getNombre();
                 }
             }
         }

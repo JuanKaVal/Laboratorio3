@@ -14,9 +14,10 @@ public class Main {
         // TODO code application logic here
         
         ParqueNacional parque = new ParqueNacional("Wachipeling", "Alajuela", 2, 5, 10);
+        ReservaBiologica rev = new ReservaBiologica("Hola", "Puntarenas", 5000);
         ReporteVector reporte = new ReporteVector();
         reporte.agregar(parque);
-        reporte.agregar(parque);
+        reporte.agregar(rev);
         System.out.println(reporte.reporte1());
         
         
