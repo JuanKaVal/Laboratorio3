@@ -9,11 +9,12 @@ public class Test {
     
         public static void main(String[] args) {
 
-        int[] test = {1,2,3,4};
+        int[] test = {1,2,3,4,5};
         Lab4.invert(test, 0, test.length-1);
-        Lab4.print(test);
+        //Lab4.print(test);
         
-        int[]domin = {50000,20000,10000,5000,1000,500,100,50,25,10,5};
         
+        
+        System.out.println("Vuelto de 46725:\n" + Lab4.atm(46725));
     }
 }
