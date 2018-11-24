@@ -38,7 +38,7 @@ public class Lab4 {
     //Método 3
     public static void print (int[] v) {
         for(int i: v) {
-            System.out.print(i + " ");
+            System.out.print(i + "");
         }
     }
     
@@ -52,7 +52,7 @@ public class Lab4 {
         }
         
         if (count != 0) {
-            return "\n" + count + ":" + domin[index] + atm(total, domin, count, index + 1);
+            return "\n" + count + ":" + domin[index] + atm(total, domin, 0, index + 1);
         }
         return atm(total, domin, count, index + 1);
     }
