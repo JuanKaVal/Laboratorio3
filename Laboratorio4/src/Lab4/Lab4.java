@@ -43,7 +43,39 @@ public class Lab4 {
     }
     
     //Metodo 4
+    public static String atm(int total, int[] domin, int count, int index) {
+        if (index == 5) {
+            return "";
+        }
+        
+        return atm(total, domin, count, index);
+    }
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /**
     public static String atm(int total, int[] domin, int count, int index) {
         if (index == domin.length) {
             return "";
@@ -58,7 +90,7 @@ public class Lab4 {
         }
         return atm(total, domin, count, index + 1);
     }
-        
+    **/ 
     
     //Método 5
     
