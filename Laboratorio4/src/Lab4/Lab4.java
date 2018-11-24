@@ -56,50 +56,7 @@ public class Lab4 {
         }
         return atm(total, domin, count, index + 1);
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    /**
-    public static String atm(int total, int[] domin, int count, int index) {
-        if (index == domin.length) {
-            return "";
-        }
-        
-        if (total >= domin[index]) {
-             return atm(total - domin[index], domin, count + 1, index);
-        }
-        
-        if (count != 0) {
-             return count + ":" + domin[index] + "\n" + atm(total, domin, 0,index+1);
-        }
-        return atm(total, domin, count, index + 1);
-    }
-    **/ 
-    
+
     //Método 5
-    
- 
 
 }
